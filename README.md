@@ -15,9 +15,12 @@ Five 80-minute sessions that open the neural network black box and translate wha
 Start Jupyter **inside this folder**: the notebooks use relative paths (`data/`, `models/`, `../ICU_Survival_analysis/`).
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate deep-learning-rai
 jupyter lab
 ```
+
+In Jupyter, select the Python kernel from the `deep-learning-rai` environment. The environment uses the CPU version of PyTorch.
 
 Run session 3 before sessions 4 and 5: it saves `models/cnn_corrected_seed0.pt` (trained on `dermamnist_corrected_28.npz`, seed 0). If the file is missing, sessions 4 and 5 retrain the model automatically (under a minute).
 
