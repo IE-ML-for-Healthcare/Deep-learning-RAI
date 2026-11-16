@@ -24,7 +24,9 @@ In Jupyter, select the Python kernel from the `deep-learning-rai` environment. T
 
 Run session 3 before sessions 4 and 5: it saves `models/cnn_corrected_seed0.pt` (trained on `dermamnist_corrected_28.npz`, seed 0). If the file is missing, sessions 4 and 5 retrain the model automatically (under a minute).
 
-Tested versions: Python 3.13, torch 2.15, numpy 2.5, scikit-learn 1.9, pandas 2.3, matplotlib 3.11, scipy 1.18, lifelines 0.30. Measured run times on a 2-core cloud processor: session 1 about 20 s, session 2 about 45 s, session 3 about 2 min, session 4 about 30 s, session 5 about 30 s. Rehearse once on the teaching laptop before class; saved outputs are a fallback if a cell fails live.
+The Conda environment was tested on Windows with Python 3.13.18, PyTorch 2.14.1, NumPy 2.5.5, scikit-learn 1.9.1, pandas 3.1.1, Matplotlib 3.11.2, SciPy 1.18.1 and lifelines 0.30.0. All five notebooks ran from start to finish. The environment file does not lock exact package versions, so a new installation may use different versions.
+
+Earlier measured run times on a 2-core cloud processor: session 1 about 20 s, session 2 about 45 s, session 3 about 2 min, session 4 about 30 s, session 5 about 30 s. Rehearse once on the teaching laptop before class; saved outputs are a fallback if a cell fails live.
 
 ## Data sources and licences
 
