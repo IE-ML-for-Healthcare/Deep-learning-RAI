@@ -12,3 +12,6 @@ dependencies:
   - scipy>=1.10
   - jupyterlab
   - ipykernel
+  - pip
+  - pip:
+      - tabpfn>=10.0

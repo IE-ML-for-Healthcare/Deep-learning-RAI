@@ -22,6 +22,8 @@ jupyter lab
 
 In Jupyter, select the Python kernel from the `deep-learning-rai` environment. The environment uses the CPU version of PyTorch.
 
+Session 2, section 6 uses the TabPFN-2 tabular foundation model (installed by `environment.yml` through pip; in Colab run `%pip install tabpfn`). Its first run downloads the weights from Hugging Face, so it needs internet once; TabPFN-2 needs no account or login. Run that section once before class: on a laptop processor it is the slowest cell. If it fails, the rest of the notebook still runs.
+
 Run session 3 before sessions 4 and 5: it saves `models/cnn_corrected_seed0.pt` (trained on `dermamnist_corrected_28.npz`, seed 0). If the file is missing, sessions 4 and 5 retrain the model automatically (under a minute).
 
 The Conda environment was tested on Windows with Python 3.13.18, PyTorch 2.14.1, NumPy 2.5.5, scikit-learn 1.9.1, pandas 3.1.1, Matplotlib 3.11.2, SciPy 1.18.1 and lifelines 0.30.0. All five notebooks ran from start to finish. The environment file does not lock exact package versions, so a new installation may use different versions.
